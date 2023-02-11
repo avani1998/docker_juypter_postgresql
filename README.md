@@ -61,3 +61,11 @@ docker run --name my-pgadmin -p 82:80 \
   Replace PGADMIN_DEFAULT_EMAI and PGADMIN_DEFAULT_PASSWORD with your email address and a password of your choosing. These detials will be used to log    into the PGAdmin webpage.  
   
   3. Once the container is up and running, visit Docker Desktop and clcik on the port link against the "my-pgadimn" container. Enter the credentials you used to create the container.
+
+# Display the databases in PostgresQL
+1. While your PostgresQl container is runnign, log into the docker container using -------
+2. Log into the terminal based front end of Postgres using 
+  ```bash
+  psql -U postgres
+  ```
+3. Type `\l` or `\list` to print all databeses in PostgresQL
