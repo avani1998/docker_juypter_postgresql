@@ -1,2 +1,6 @@
-# docker_juypter_postgresql
-A tutorial on using docker to create a Jupyter notebook with PostgreSQL integration.
+# Install Docker Desktop 
+[Install](https://www.docker.com/get-started/)
+
+# Install Anaconda
+[Install](https://www.anaconda.com/)
+
