@@ -59,4 +59,5 @@ docker run --name my-pgadmin -p 82:80 \
   -d dpage/pgadmin4
 ```
   Replace PGADMIN_DEFAULT_EMAI and PGADMIN_DEFAULT_PASSWORD with your email address and a password of your choosing. These detials will be used to log    into the PGAdmin webpage.  
-3. Once the container is up and running, visit Docker Desktop and clcik on the port link against the "my-pgadimn" container. Enter the credentials you used to create the container.
+  
+  3. Once the container is up and running, visit Docker Desktop and clcik on the port link against the "my-pgadimn" container. Enter the credentials you used to create the container.
