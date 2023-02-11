@@ -40,4 +40,20 @@ Now, executing  `docker ps`  we see that a new entry has been made in the table.
 While your container is running
 
 # Copy .csv file into Docker
-While your container is running, open another terminal and your csv file into the container. Here I am using [Goodreads-book](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks) csv from Kaggle. My downloaded csv is located in my Downloads folder. 
+While your container is running, open another terminal and your csv file into the container. Here I am using [Goodreads-book](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks) csv from Kaggle. My downloaded csv is located in my Downloads folder.
+
+
+# PGAdmin
+Now, you have to install PGAdmin, a web-based GUI tool used to manage PostgreSQL databases and services. You can install PGAdmin to check whether your Docker Containers are working fine and execute SQL queries on databases present in PostgreSQL.
+
+To install PGAdmin do the follwoing:
+1. Search Docker Hub for PGAdmin and pull the Image
+```bash
+docker pull dpage/pgadmin4
+``` 
+2. Run the container using 
+```bash
+docker run --name my-pgadmin -p 82:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.local' -e 'PGADMIN_DEFAULT_PASSWORD=postgresmaster'-d dpage/pgadmin4
+```
+Replace PGADMIN_DEFAULT_EMAI and PGADMIN_DEFAULT_PASSWORD with your email address and a password of your choosing. These detials will be used to log into the PGAdmin webpage. Once the container is up and running, visit Docker Desktop and clcik on the port link against the "my-pgadimn" container. Enter the credentials you used to create the container.
+
