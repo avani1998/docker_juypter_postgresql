@@ -19,15 +19,15 @@ To launch Jupyter Notebook on Docker, create a new container containing the Jupy
 docker run -p 10000:8888 jupyter/scipy-notebook:85f615d5cafa 
 ```
 
-``` -d ```  flag tells docker to run the container in detached mode (in the background)  
-``` -p 1000:8000 ```  creates a mapping of port 1000 on your local environment to the port 8000 on the container  
-``` jupyter/scipy-notebook:85f615d5cafa ```   is the name of the container  
+`-d`  flag tells docker to run the container in detached mode (in the background)  
+`-p 1000:8000`  creates a mapping of port 1000 on your local environment to the port 8000 on the container  
+`jupyter/scipy-notebook:85f615d5cafa`   is the name of the container  
 
 This command does two things one after the other: 
   1. Pulls the jupyter/scipy-notebook image from the Docker Hub
   2. Creates a container with this image and runs runs it on port 8000 of the container. 
 
-Visitng ``` http://<hostname>:10000/?token=<token> ``` in a browser will load Jupyter Notebook, where 
+Visitng `http://<hostname>:10000/?token=<token>` in a browser will load Jupyter Notebook, where 
 - hostname is the name of the computer running Docker
 - token is the secret token printed in the console.
 
@@ -36,7 +36,7 @@ Or, using the links provided at the end of the terminal output of the docker run
 
 Now, executing  `docker ps`  we see that a new entry has been made in the table. 
 
-# Check the working directory in Docker
+# Check Docker's working directory
 While your container is running
 
 # Copy .csv file into Docker
