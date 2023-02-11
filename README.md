@@ -16,7 +16,9 @@ To launch Jupyter Notebook on Docker, create a new container containing the Jupy
 docker run -p 10000:8888 jupyter/scipy-notebook:85f615d5cafa 
 ```
 
-``` -d ``` flag tells docker to run the container in detached mode (in the background)  
+``` 
+-d 
+``` flag tells docker to run the container in detached mode (in the background)  
 ``` -p 1000:8000 ``` creates a mapping of port 1000 on your local environment to the port 8000 on the container  
 ``` jupyter/scipy-notebook:85f615d5cafa ``` is the name of the container  
 
