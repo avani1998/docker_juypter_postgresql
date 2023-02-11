@@ -34,7 +34,7 @@ Visitng ``` http://<hostname>:10000/?token=<token> ``` in a browser will load Ju
 Or, using the links provided at the end of the terminal output of the docker run commad can be used to launch Jupyter Notebook. 
 ### Image 2
 
-Now, executing  docker ps  we see that a new entry has been made in the table. 
+Now, executing  `docker ps`  we see that a new entry has been made in the table. 
 
 # Check the working directory in Docker
 While your container is running
