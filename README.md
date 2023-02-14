@@ -69,3 +69,8 @@ docker run --name my-pgadmin -p 82:80 \
   psql -U postgres
   ```
 3. Type `\l` or `\list` to print all databeses in PostgresQL
+
+# Log into Docker container as root
+```bash
+docker exec -u 0 -it mycontainer bash
+```
