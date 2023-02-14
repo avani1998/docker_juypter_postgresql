@@ -74,3 +74,4 @@ docker run --name my-pgadmin -p 82:80 \
 ```bash
 docker exec -u 0 -it mycontainer bash
 ```
+root (id = 0) is the default user within a container.
